@@ -1,0 +1,22 @@
+Q:   What is a gitignore file and what should it include for a Java project?
+
+A:   A gitignore file specifies intentionally untracked files that Git should ignore.
+    Files already tracked by Git are not affected.
+    It should include  compiled class files - *.class and packaged files such as *.jar, *.war, *.tar.gz, *.zip
+
+Q:  What does fast-forward in Git mean?
+
+A:  A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch.
+    Instead of “actually” merging the branches, all Git has to do to integrate the histories is move (i.e., “fast forward”)
+    the current branch tip up to the target branch tip.
+    In other terms "fast forward" means to update the HEAD pointer in such a way that its new value is a direct descendant of the prior value.
+
+Q:  Why should you have different branches?
+
+A:  Branching allows each developer to branch out from the original code base and isolate their work from others. It also helps Git to easily merge versions later on.
+    It is a common practice to create a new branch for each task (i.e., a branch for bug fixing, a branch for new features, etc.).
+    This method allows others to easily identify what changes to expect and also makes backtracking simple.
+
+
+Q:  In a project how many remote Git repositories do you usually have?
+A:  You can have as many remotes as you want, but you can only have one remote named "origin". The remote called "origin" is not special in any way, except that it is the default remote created by Git when you clone an existing repository.
